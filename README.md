@@ -3,6 +3,7 @@ ________________________________________
 ## **Objective**
 
 The objective of this project was to design and implement a scalable and efficient Data Analytics Platform (DAP) for the City of Vancouver using Amazon Web Services (AWS). The platform aimed to enable data-driven decision-making for urban management, enhance data accessibility, and ensure robust data security, governance, and observability.
+
 ________________________________________
 ## **Dataset**
 
