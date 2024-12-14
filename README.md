@@ -1,4 +1,4 @@
-# **Project: Design and Implementation of a Data Analytics Platform for Vancouver**
+![image](https://github.com/user-attachments/assets/80b3c562-7841-4327-8ceb-34355431c051)# **Project: Design and Implementation of a Data Analytics Platform for Vancouver**
 ________________________________________
 ## **Objective**
 
@@ -395,3 +395,108 @@ This project demonstrated the effectiveness of using AWS Glue for implementing r
 
 ________________________________________
 ________________________________________
+
+
+
+# **Data Wrangling Summary for HR Data**
+
+________________________________________
+
+## **Objective**
+
+The primary goal of this data wrangling task was to clean, structure, and organize HR datasets for further analysis. This included creating projects in AWS Glue DataBrew to apply transformations and saving the outputs in organized Amazon S3 buckets.
+
+________________________________________
+
+## **Methodology**
+
+![image](https://github.com/user-attachments/assets/ba55adc5-2fb9-490e-8e9e-2d92c15181e1)
+
+
+**1.	Data Source:**
+
+- Raw HR datasets stored in Amazon S3 were used as input for the data wrangling process.
+  
+**2.	Data Profiling:**
+
+- AWS Glue DataBrew Projects were created to analyze and profile the datasets, ensuring their structure and content matched expectations.
+  
+- Projects like hr-sub-tes-nat, hr-sub-inc-nat, and hr-sub-wor-nat were specifically used to focus on subsets of data.
+  
+**3.	Data Cleaning:**
+
+- Data was transformed using recipes attached to the DataBrew projects:
+  
+	- Unnecessary columns were removed.
+   
+	- Invalid or duplicate records were filtered out.
+   
+	- Additional fields were standardized for consistency.
+   
+**4.	Data Quality Rules:**
+
+- Applied validation rules to ensure data correctness and completeness.
+  
+- Ensured that datasets adhered to predefined schemas.
+  
+**5.	Organizing Outputs:**
+
+- The cleaned and processed datasets were stored in well-organized S3 folders, categorized by:
+  
+	- **Departments:** e.g., Administration, Facilities, IT.
+
+   	![image](https://github.com/user-attachments/assets/977b7457-4d79-4078-9c63-6278b9c5f105)
+
+   
+	- **Locations:** e.g., Country-specific folders like Country-Australia, Country-Brazil.
+   
+   	![image](https://github.com/user-attachments/assets/b83e9d41-535b-4c43-b408-a6168cf78d6d)
+
+   
+**6.	Job Execution:**
+
+- AWS Glue DataBrew jobs were run to execute the transformations defined in the recipes, producing cleaned datasets with the Succeeded status in the Job Dashboard.
+  
+________________________________________
+
+## **Tools and Technologies**
+
+- AWS Glue DataBrew for data cleaning and transformation.
+  
+- Amazon S3 for storing raw and processed datasets.
+  
+- DataBrew Recipes to automate the cleaning tasks.
+  
+________________________________________
+
+## **Deliverables**
+
+**1.	Transformed Datasets:**
+
+- Processed datasets for HR incidents, test results, and worker details stored in S3.
+  
+**2.	Categorized Storage:**
+
+- Organized data into structured folders by department and country for easier accessibility.
+  
+**3.	Validated Quality:**
+
+- Datasets passed quality checks for schema correctness and data completeness.
+  
+________________________________________
+
+**Key Insights**
+
+
+- Using AWS Glue DataBrew streamlined the wrangling process, reducing manual effort.
+  
+- Storing the datasets in Amazon S3 with logical categorization made it easy to retrieve and analyze specific subsets of data.
+  
+- Data profiling and validation ensured high-quality datasets ready for downstream analytics.
+
+  ![image](https://github.com/user-attachments/assets/dc0d2020-0ab3-4cdc-9406-cae14dbd70c1)
+
+  ![image](https://github.com/user-attachments/assets/d5034b81-de39-460e-b95c-404300ebc844)
+
+
+
