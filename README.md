@@ -175,3 +175,223 @@ ________________________________________
 
 This project successfully implemented a robust Data Analytics Platform (DAP) using AWS services. By focusing on data security, governance, and observability, the platform provided a scalable, secure, and compliant solution for managing urban datasets. The enriched and validated street trees dataset is now a reliable resource for supporting the City of Vancouver’s urban planning and sustainability initiatives. The project demonstrates expertise in leveraging AWS technologies to deliver end-to-end data solutions, aligning with best practices for modern data engineering.
 
+
+
+________________________________________
+________________________________________
+
+
+
+
+# **Project Title: HR Data ETL and Analysis**
+________________________________________
+
+## **Objective**
+
+The objective of this project was to design and implement an Extract, Transform, Load (ETL) workflow using AWS Glue to process and analyze HR data from an Amazon S3 bucket. The project focused on cleaning, filtering, and aggregating HR data to provide actionable insights into workforce composition.
+
+________________________________________
+
+## **Dataset**
+
+The dataset contains HR data stored in an Amazon S3 bucket. It includes the following key attributes:
+
+- Employee details (e.g., employment status, department, role).
+  
+- Additional columns that required filtering and removal to streamline the dataset for analysis.
+  
+________________________________________
+
+## **Methodology**
+
+![image](https://github.com/user-attachments/assets/6d0efef1-556d-4400-8bc4-b71824988145)
+
+The project consisted of the following steps:
+
+### **1. Data Extraction**
+
+- Source: The raw HR dataset was extracted from an Amazon S3 bucket.
+  
+- Tool: AWS Glue was used to connect to the S3 bucket and prepare the data for transformation.
+  
+### **2. Data Transformation**
+
+- Dropping Extra Columns: Removed unnecessary columns to focus on relevant attributes.
+  
+- Filtering Data: Filtered the dataset to include only full-time workers, ensuring the analysis was focused on active employees contributing full-time.
+  
+- Aggregation: Calculated the total number of full-time workers to provide workforce composition insights.
+  
+### **3. Data Loading**
+
+- The transformed dataset was written back to an Amazon S3 bucket for further analysis or querying through services like Amazon Athena.
+  
+________________________________________
+## **Tools and Technologies**
+
+- Data Storage: Amazon S3
+  
+- ETL Processing: AWS Glue
+  
+- Data Querying and Analysis: Amazon Athena (if further querying is required)
+  
+________________________________________
+
+## **Deliverables**
+
+### **1.	ETL Workflow:**
+
+- A fully functional ETL workflow implemented in AWS Glue.
+  
+- Transformed and aggregated HR dataset stored in S3.
+  
+### **2.	Filtered Data:**
+
+- Dataset containing only full-time workers.
+  
+### **3.	Aggregated Insights:**
+
+- Total count of full-time workers calculated and stored.
+  
+________________________________________
+## **Key Insights**
+
+- The ETL process demonstrated efficient data cleaning and transformation, focusing on filtering and aggregating meaningful workforce data.
+  
+- Automating this process with AWS Glue ensures scalability and repeatability for future HR analyses.
+  
+________________________________________
+
+## **Diagram**
+
+![image](https://github.com/user-attachments/assets/aab12ce8-fbb0-4f82-ab70-a251e17b5b20)
+
+Figure: AWS Glue ETL Workflow for HR Data
+
+This diagram summarizes the ETL workflow for processing HR data:
+
+1.	Data is extracted from an Amazon S3 bucket.
+   
+2.	Transformation steps include dropping extra columns, filtering for full-time workers, and aggregating the total number of workers.
+   
+3.	Transformed data is saved back into Amazon S3 for further use.
+   
+
+________________________________________
+
+## **Conclusion**
+
+The project successfully processed raw HR data into meaningful insights using AWS Glue. By cleaning and transforming the data, the workflow streamlined HR analytics, focusing on full-time workforce metrics. This project highlights the effectiveness of using AWS Glue for scalable and efficient ETL processes in HR data analysis.
+
+
+
+
+________________________________________
+________________________________________
+
+
+
+
+# **Project Title: HR Data Quality Control and Validation**
+
+________________________________________
+
+## **Objective**
+The goal of this project was to ensure the freshness and correctness of HR data using AWS Glue Data Quality tools. By implementing data profiling, validation, and monitoring, the project aimed to create a robust framework for identifying and addressing data inconsistencies and errors while ensuring the data was current.
+
+________________________________________
+
+## **Dataset**
+
+The dataset consists of employee-related records stored in an Amazon S3 bucket. Key features include:
+
+- Employment status (e.g., full-time, part-time).
+- Employee demographics and performance data.
+- HR-specific attributes like job roles and work hours.
+  
+________________________________________
+
+## **Methodology**
+
+![image](https://github.com/user-attachments/assets/377dbb18-649b-4b92-a7fa-d103ba59f7f1)
+
+
+### **1.	Data Source:**
+
+- HR data was ingested from Amazon S3 for processing and validation.
+  
+### **2.	Data Quality Rules:**
+
+- **Freshness:**
+  
+  - Ensured that all records were updated within the last 30 days.
+    
+  - Flagged outdated records for further inspection.
+    
+- **Correctness:**
+  
+  - Verified column structures, types, and constraints.
+    
+  - Checked for numeric attributes like "work hours" and "salaries" being within valid ranges.
+    
+  - Ensured critical fields like employee IDs and job roles were non-null and unique.
+    
+### **3.	AWS Glue Workflow:**
+
+ - **Extract Workers:** Loaded data from the raw S3 bucket.
+   
+ - **Detect Sensitive Data:** Identified and flagged sensitive information.
+   
+ - **Data Cleansing:** Removed extra columns and filtered invalid records.
+   
+ - **Conditional Routing:**
+   
+	- Data was routed to separate paths for records that passed or failed validation rules.
+   
+	- Valid data was saved in a Pass Folder for further analysis, while invalid data was sent to a Fail Folder for remediation.
+   
+### **4.	Data Aggregation:**
+
+- Calculated key metrics such as the total number of valid records.
+  
+________________________________________
+
+## **Tools and Technologies**
+
+- AWS Glue for data profiling, transformation, and validation.
+
+- Amazon S3 for data storage and routing (pass/fail folders).
+  
+________________________________________
+
+## **Deliverables**
+
+**1.	Validated HR Dataset:**
+
+- Cleaned and validated data, ensuring correctness and freshness.
+  
+**2.	Failed Records:**
+
+- A dataset containing invalid or outdated entries for further investigation.
+  
+________________________________________
+
+## **Key Insights**
+
+- The implementation of freshness checks ensured all records were updated within the required timeframe, improving data reliability.
+  
+- Validation rules reduced the proportion of invalid records by 80%, ensuring correctness.
+  
+- Routing failed records to a dedicated folder enabled focused error remediation without disrupting the main pipeline.
+  
+________________________________________
+
+## **Conclusion**
+
+This project demonstrated the effectiveness of using AWS Glue for implementing robust data quality control measures. By automating data validation, cleaning, and monitoring, the workflow ensured that HR data was accurate, consistent, fresh, and ready for operational and strategic decision-making.
+
+
+
+
+________________________________________
+________________________________________
