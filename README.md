@@ -27,11 +27,17 @@ The project consisted of the following phases:
 
 ### **1. Data Ingestion**
 
+![image](https://github.com/user-attachments/assets/f3b3a767-c296-4ca8-967d-f2e52c203ea6)
+
+
 -	Stored the raw dataset in an Amazon S3 bucket (va-raw-nat), organized by ingestion year (2024).
 
 -	Configured lifecycle rules to transition older data to Amazon S3 Glacier for cost-effective long-term storage.
 
 ### **2. Data Profiling**
+
+![image](https://github.com/user-attachments/assets/a3b94e20-862c-4332-9a26-9267cf438590)
+
 
 -	Conducted profiling using AWS Glue DataBrew to analyze dataset characteristics.
 
@@ -45,6 +51,9 @@ The project consisted of the following phases:
 
 ### **3. Data Cleaning**
 
+![image](https://github.com/user-attachments/assets/fdbb372b-c4cd-4b34-8dc1-c3811d05970b)
+
+
 -	Addressed missing values and inconsistencies using AWS Glue transformations.
 
 -	Performed:
@@ -57,6 +66,8 @@ The project consisted of the following phases:
 
 ### **4. Data Enriching**
 
+![image](https://github.com/user-attachments/assets/d93f0094-3c4b-4663-8457-fbd75e7015fb)
+	
 -	Enhanced the dataset through the following steps:
 
 	-	Tree Age Calculation: Computed tree age using the DATE_PLANTED column.
@@ -83,6 +94,9 @@ The project consisted of the following phases:
 
 ### **6. Data Governance**
 
+![image](https://github.com/user-attachments/assets/92be1490-7dcb-4796-9472-9f86caca5bbe)
+
+
 -	Established a governance framework to ensure data quality and compliance:
 
 	-	Completeness: Ensured all critical fields (e.g., DATE_PLANTED, DIAMETER) were non-null.
@@ -94,6 +108,9 @@ The project consisted of the following phases:
 	-	Standardization: Applied transformations to align data types with the schema in the Glue Data Catalog.
 
 ### **7. Data Observability**
+
+![image](https://github.com/user-attachments/assets/a9bc9af3-d96a-4989-a1f1-1e8d81c37bab)
+
 
 -	Configured observability tools to monitor pipeline performance and detect anomalies:
 
