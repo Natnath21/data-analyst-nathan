@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/80b3c562-7841-4327-8ceb-34355431c051)# **Project: Design and Implementation of a Data Analytics Platform for Vancouver**
+# **Project: Design and Implementation of a Data Analytics Platform for Vancouver**
 ________________________________________
 ## **Objective**
 
