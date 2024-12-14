@@ -20,6 +20,9 @@ The project utilized the Street Trees Dataset sourced from the City of Vancouver
 ________________________________________
 ## **Methodology**
 
+![image](https://github.com/user-attachments/assets/84a2c930-85bf-4358-8eaa-2bb09d6c1ee9)
+
+
 The project consisted of the following phases:
 
 ### **1. Data Ingestion**
